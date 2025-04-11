@@ -1,0 +1,16 @@
+{"songs": [
+    {
+      "id": "1",
+      "name": "Fade to Black",
+      "length": 2.53,
+      "genre": "Metal",
+      "releasedate": 2002
+    },
+    {
+        "id": "2",
+        "name": "One",
+        "length": 2.53,
+        "genre": "Metal",
+        "releasedate": 2002
+    }
+  ]}
