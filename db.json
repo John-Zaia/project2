@@ -1,16 +1,81 @@
-{"songs": [
+{
+  "songs": [
     {
       "id": "1",
-      "name": "Fade to Black",
-      "length": 2.53,
+      "name": "Master of Puppets",
+      "length": 8.35,
       "genre": "Metal",
-      "releasedate": 2002
+      "releasedate": 1986
     },
     {
-        "id": "2",
-        "name": "One",
-        "length": 2.53,
-        "genre": "Metal",
-        "releasedate": 2002
+      "id": "2",
+      "name": "Enter Sandman",
+      "length": 5.31,
+      "genre": "Metal",
+      "releasedate": 1991
+    },
+    {
+      "id": "3",
+      "name": "Paranoid",
+      "length": 2.53,
+      "genre": "Metal",
+      "releasedate": 1970
+    },
+    {
+      "id": "4",
+      "name": "War Pigs",
+      "length": 7.55,
+      "genre": "Metal",
+      "releasedate": 1970
+    },
+    {
+      "id": "5",
+      "name": "Holy Wars... The Punishment Due",
+      "length": 6.32,
+      "genre": "Metal",
+      "releasedate": 1990
+    },
+    {
+      "id": "6",
+      "name": "Painkiller",
+      "length": 6.06,
+      "genre": "Metal",
+      "releasedate": 1990
+    },
+    {
+      "id": "7",
+      "name": "The Trooper",
+      "length": 4.12,
+      "genre": "Metal",
+      "releasedate": 1983
+    },
+    {
+      "id": "8",
+      "name": "Hallowed Be Thy Name",
+      "length": 7.12,
+      "genre": "Metal",
+      "releasedate": 1982
+    },
+    {
+      "id": "9",
+      "name": "Raining Blood",
+      "length": 4.14,
+      "genre": "Metal",
+      "releasedate": 1986
+    },
+    {
+      "id": "10",
+      "name": "Caught in a Mosh",
+      "length": 4.59,
+      "genre": "Metal",
+      "releasedate": 1987
+    },
+    {
+      "id": "11",
+      "name": "Never Too Late",
+      "length": 3.58,
+      "genre": "Rock",
+      "releasedate": 2004
     }
-  ]}
+  ]
+}
