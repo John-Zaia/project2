@@ -2,10 +2,10 @@
   "songs": [
     {
       "id": "3",
-      "name": "Paranoid",
-      "length": 2.53,
-      "genre": "Metal",
-      "releasedate": 1970
+      "name": "something else",
+      "length": "2.33",
+      "genre": "rock",
+      "releasedate": "2002"
     },
     {
       "id": "4",
