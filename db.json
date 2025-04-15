@@ -1,20 +1,6 @@
 {
   "songs": [
     {
-      "id": "1",
-      "name": "Master of Puppets",
-      "length": 8.35,
-      "genre": "Metal",
-      "releasedate": 1986
-    },
-    {
-      "id": "2",
-      "name": "Enter Sandman",
-      "length": 5.31,
-      "genre": "Metal",
-      "releasedate": 1991
-    },
-    {
       "id": "3",
       "name": "Paranoid",
       "length": 2.53,

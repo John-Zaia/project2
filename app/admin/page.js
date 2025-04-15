@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { deleteSong } from "./actions.js";
 
 export default async function songCollection() {
   const data = await fetch('http://localhost:4000/songs'); 
@@ -28,8 +29,14 @@ export default async function songCollection() {
                             <td>{song.length}</td>
                             <td>{song.genre}</td>
                             <td>{song.releasedate}</td>
-                            <td><Link href="">D</Link></td>
+                            <td>
+                            <form action={deleteSong.bind(null, song.id)}>
+                                <input type="submit" value="D" />
+                            </form>
+                            </td>
                             <td><Link href="">E</Link></td>
+                            <td>
+                            </td>
                         </tr>
                     </tbody>
                 ))
