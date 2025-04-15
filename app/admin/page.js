@@ -34,7 +34,7 @@ export default async function songCollection() {
                                 <input type="submit" value="D" />
                             </form>
                             </td>
-                            <td><Link href="">E</Link></td>
+                            <td><Link href={`/admin/edit/${song.id}`}>E</Link></td>
                             <td>
                             </td>
                         </tr>
