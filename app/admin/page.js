@@ -7,7 +7,7 @@ export default async function songCollection() {
 
   return (
     <div>
-        <h1>Songs</h1>
+        <Link href="/admin/create">Songs</Link>
         <table>
             <thead>
                 <tr>
