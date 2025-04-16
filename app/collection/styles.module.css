@@ -1,0 +1,24 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.listItem{
+    margin-bottom: 10px;
+    border: 1px solid #7dcce4;
+    border-radius: 12px;
+    margin-left: 500px;
+    margin-right: 500px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.link{
+    color: #278cff;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
