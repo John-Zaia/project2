@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import { updateSong} from '@/app/admin/edit/actions'
+import { updateSong } from '@/app/admin/edit/actions'
 
 export function EditForm({ song }){
     const [songData, setSongData] = useState({
@@ -10,18 +10,50 @@ export function EditForm({ song }){
         genre: song.genre,
         releasedate: song.releasedate
     } ) 
+    const [errors, setErrors] = useState([])
 
     const handleEdit = (e) => {
         setSongData({ ...songData, [e.target.name]: e.target.value });
       };
 
+    
     async function handleSubmit(e){
         e.preventDefault();
-        await updateSong(songData)
+        let formErrors = [];
+
+        if (songData.name.length < 1 || songData.name.length > 30)
+          {
+            formErrors.push("Song name must be between 1 and 30 characters");
+          } 
+        
+        if (parseInt(songData.releasedate) < 1800 || parseInt(songData.releasedate) > 2025)
+          {
+            formErrors.push("Song must be released between 1800 and 2025")
+          }
+
+        if (parseFloat(songData.length) <= 0)
+          {
+            formErrors.push("Length of song must be greater than 0")
+          }
+
+        if (formErrors.length == 0 )
+          {
+            setErrors([])
+            await updateSong(songData)
+          }
+        else
+          {
+            setErrors(formErrors)
+          }
     }   
 
   return (
     <div>
+        {errors.length > 0 && (
+          <ul>
+            {errors.map((error) => <li key={error}>{error}</li>)}
+          </ul>
+        )}
         <form onSubmit={handleSubmit}>
             <label htmlFor="id">Song ID: </label>&nbsp;
             <input type="text" name="name" id="id" defaultValue={songData.id} onChange={handleEdit}/> <br/>

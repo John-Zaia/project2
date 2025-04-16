@@ -9,10 +9,10 @@
     },
     {
       "id": "4",
-      "name": "War Pigs",
-      "length": 7.55,
+      "name": "validationtest",
+      "length": "1",
       "genre": "Metal",
-      "releasedate": 1970
+      "releasedate": "2025"
     },
     {
       "id": "5",
