@@ -8,7 +8,7 @@ export default async function songCollection() {
 
   return (
     <div className={styles.container}>
-        <Link className={styles.link} href="/admin/create">Songs</Link>
+        <Link className={styles.link} href="/admin/create">Create New</Link>
         <table className={styles.table}>
             <thead>
                 <tr>
