@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import styles from "./styles.module.css";
 
 export default async function SongDetail(props) {
 
@@ -12,25 +13,25 @@ export default async function SongDetail(props) {
     const song = await data.json();
 
     return(
-      <div>
-        <Link href={`/collection`}>Back</Link>
-        <table>
+      <div className={styles.container}>
+        <Link className={styles.link} href={`/collection`}>Back</Link>
+        <table className={styles.table}>
           <thead>
             <tr>
-              <th>ID</th>
-              <th>Name</th>
-              <th>Length</th>
-              <th>Genre</th>
-              <th>Release Date</th>
+              <th className={styles.item}>ID</th>
+              <th className={styles.item}>Name</th>
+              <th className={styles.item}>Length</th>
+              <th className={styles.item}>Genre</th>
+              <th className={styles.item}>Release Date</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>{song.id}</td>
-              <td>{song.name}</td>
-              <td>{song.length}</td>
-              <td>{song.genre}</td>
-              <td>{song.releasedate}</td>
+              <td className={styles.item}>{song.id}</td>
+              <td className={styles.item}>{song.name}</td>
+              <td className={styles.item}>{song.length}</td>
+              <td className={styles.item}>{song.genre}</td>
+              <td className={styles.item}>{song.releasedate}</td>
             </tr>
           </tbody>
         </table>
